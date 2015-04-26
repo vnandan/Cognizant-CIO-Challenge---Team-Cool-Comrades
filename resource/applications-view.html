@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMS | Resource Management System</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="siteTheme" href="/css/blue.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:800,900' rel='stylesheet' type='text/css'>
+    <script src="/js/vendor/modernizr.js"></script>
+  </head>
+<body>
+
+<div class="contain-to-grid">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/" style="font-family: 'Raleway';font-weight:900;font-size:1.9em;">RMS</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right" id="top-bar-menu">
+      <li class="active"><img src="/img/profile.jpg" class="top-bar-profile-pic"/></li>
+      <li class="has-dropdown">
+        <a href="#"><i class="fa fa-users fa-top-menu"></i></a>
+        <ul class="dropdown">
+          <li><span><small>Change user to</small></span></li>
+          <li><a href="/project_manager/ongoing-projects.html" class="try"><i class="fa fa-user" style="color:#008cba"></i>&nbsp;Project Manager</a></li>
+          <li><a href="/portfolio-head/port-dash.html" class="try"><i class="fa fa-check" style="color:#008cba"></i>&nbsp;Portfolio Head</a></li>
+          <li><a href="/application-monitor/app_monitor_view.html" class="try"><i class="fa fa-area-chart" style="color:#008cba"></i>&nbsp;Application Monitor</a></li>
+        </ul>
+      </li>
+    
+    <li class="has-dropdown" style="background: #FFF;">
+        <a href="#">Notifications</a>
+        <ul class="dropdown notifications-list">
+          <li>
+          <div class="row" data-equalizer>
+            <div class="small-1  medium-2 columns notifications-pic-wrapper" style="background-image:url(/img/profile1.jpg);" data-equalizer-watch></div>
+            <div class="small-10  medium-10 columns left" data-equalizer-watch><p>Mr. Adarsh Nagare has endorsed you for skill: C++</p></div>
+          </div>
+          </li>
+          <li>
+          <div class="row" data-equalizer>
+            <div class="small-1  medium-2 columns notifications-pic-wrapper" style="background-image:url(/img/profile2.jpg);" data-equalizer-watch></div>
+            <div class="small-10  medium-10 columns left" data-equalizer-watch><p>Your request for new allocation has been approved</p></div>
+          </div>
+          </li>
+          <li>
+          <div class="row" data-equalizer>
+            <div class="small-1  medium-2 columns notifications-pic-wrapper" style="background-image:url(/img/profile3.jpg);" data-equalizer-watch></div>
+            <div class="small-10  medium-10 columns left" data-equalizer-watch><p>You have new invitation for a project.</p></div>
+          </div>
+          </li>
+        </ul>
+      </li>
+
+       <li class="has-dropdown">
+        <a href="#"><i class="fa fa-cog fa-top-menu"></i></a>
+        <ul class="bubble dropdown">
+          <li><span><small>Change theme</small></span></li>
+          <li><a href="#" onclick="changeTheme('blue');location.reload();" class="try"><i class="fa fa-circle" style="color: blue!important;"></i>&nbsp;Blue</a></li>
+          <li><a href="#" onclick="changeTheme('green');location.reload();"  class="try"><i class="fa fa-circle" style="color: green!important;"></i>&nbsp;Green</a></li>
+          <li><a href="#" onclick="changeTheme('dark');location.reload();"  class="try"><i class="fa fa-circle" style="color: #242424!important;"></i>&nbsp;Dark</a></li>
+          <li><a href="#" onclick="changeTheme('yellow');location.reload();"  class="try"><i class="fa fa-circle" style="color: yellow!important;"></i>&nbsp;Yellow</a></li>
+        </ul>
+      </li>
+
+      
+     </ul>
+    </section>
+</nav>
+</div>
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle show-for-small" href="#" style="font-size:1.6em;color: #222222;"><i class="fa fa-arrow-right"></i></a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <div class="row">
+                <div class="medium-3-less small-12 large-3-less columns widget" id="sideNav">
+                    <ul class="side-nav">
+                        <li><a href="/resource/resource_open_project_view.html"><i class="fa fa-home"></i>&nbsp;Dashboard</a></li>
+                        <li><a href="/resource/resources_search.html"><i class="fa fa-search"></i>&nbsp;Search Projects</a></li>
+                        <li><a href="/resource/project-view.html"><i class="fa fa-cubes"></i>&nbsp;Ongoing Projects</a></li>
+                        <li><a href="/resource/resource-edit-profile.html"><i class="fa fa-user-plus"></i>&nbsp;Update Skillset</a></li>
+                        <li><a href="/resource/applications-view.html"><i class="fa fa-file-o"></i>&nbsp;Applications</a></li>
+                        
+                    </ul>
+                </div>
+
+                </div>
+        <ul>
+        </ul>
+    </aside>
+
+<div class="row">    
+<div class="medium-3-less small-12 large-3-less columns widget hide-for-small">
+        <ul class="side-nav">
+            <li><a href="/resource/resource_open_project_view.html"><i class="fa fa-home"></i>&nbsp;Dashboard</a></li>
+            <li><a href="/resource/resources_search.html"><i class="fa fa-search"></i>&nbsp;Search Projects</a></li>
+            <li><a href="/resource/project-view.html"><i class="fa fa-cubes"></i>&nbsp;Ongoing Projects</a></li>
+            <li><a href="/resource/resource-edit-profile.html"><i class="fa fa-user-plus"></i>&nbsp;Update Skillset</a></li>
+            <li><a href="/resource/applications-view.html"><i class="fa fa-file-o"></i>&nbsp;Applications</a></li>
+            
+        </ul>
+</div>
+
+    <div class="medium-9-less small-12 large-9-less columns widget" style="float: right;" id="content"><h2 class="page-title">Applications</h2>
+<div class="row" style="margin-top: 20px;">
+<div class="small-12 columns">
+	<table>
+	  <tbody>
+	    <tr>
+		 <td>Project Name</td>
+		 <td>User Management System</td>
+		</tr>
+	    <tr>
+	      <td>Created</td>
+	      <td>12/06/2014</td>
+	    </tr>
+	    <tr>
+	      <td>Description</td>
+	      <td>This project takes care of all user management oparations in this company. It is fast, flexible and covers all the functionalities in one central system. <a href="/resource/project-view.html">View More</a></td>
+	    </tr>
+	    <tr>
+	      <td>Project Lead</td>
+	      <td><a href="/project_manager/view-profile.html">John Doe</a></td>
+	    </tr>
+	    </tbody>
+</table>
+
+<div style="text-align:center">
+<button name="b2" href="#" class="button round tiny" >Cancel</button>
+</div>
+</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+<div class="small-12 columns">
+	<table>
+	  <tbody>
+	    <tr>
+		 <td>Project Name</td>
+		 <td>Online Payment System</td>
+		</tr>
+	    <tr>
+	      <td>Created</td>
+	      <td>12/06/2014</td>
+	    </tr>
+	    <tr>
+	      <td>Description</td>
+	      <td>This project takes care of all payment operations in this company. It is fast, flexible and covers all the functionalities in one central system. <a href="/resource/project-view.html">View More</a></td>
+	    </tr>
+	    <tr>
+	      <td>Project Lead</td>
+	      <td><a href="/project_manager/view-profile.html">John Doe</a></td>
+	    </tr>
+	    </tbody>
+</table>
+
+<div style="text-align:center">
+<button name="b3" href="#" class="button round tiny" >Cancel</button>
+</div>
+</div>
+</div>
+
+    </div>
+</div>
+<script src="/js/vendor/jquery.js"></script>
+<script src="/js/foundation/foundation.js"></script>
+<script src="/js/foundation/foundation.topbar.js"></script>
+<script src="/js/foundation/foundation.tab.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/foundation/foundation.alert.js"></script>
+<script src="/js/foundation/foundation.equalizer.js"></script>
+<script src="/js/foundation/foundation.offcanvas.js"></script>
+<script src="/js/foundation/foundation.clearing.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+
+
+  <!-- close the off-canvas menu. USE AS IS-->
+  <a class="exit-off-canvas"></a>
+  </div>
+  </div>
+  <!-- OFF CANVAS CODE. OUT OF BOUNDS.-->
+
+<script>
+function getCookie(cname)
+{
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+$(document).ready(function(){
+  $('body').hide();
+    x=getCookie('theme');
+    if(x)
+      {
+        $('#siteTheme').attr('href','/css/'+x+'.css');
+        document.cookie = 'theme='+x+";path=/";
+      }
+    else
+    {
+      $("link[href=\'/css/blue.css\']").attr('href','/css/'+'blue'+'.css');
+        document.cookie = 'theme=blue;path=/';
+    }
+    $('body').show();
+});
+
+function changeTheme(theme)
+{
+  document.cookie = 'theme='+theme+";path=/";
+}
+
+</script>
+</body>
+</html>
